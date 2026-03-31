@@ -3,35 +3,7 @@ This is an unknown application written in Java
 
 ---- For Submission (you must fill in the information below) ----
 ### Use Case Diagram
-```mermaid
-   useCaseDiagram
-    actor "Student" as student
-    actor "Admin" as admin
 
-    package "Enrollment System" {
-        usecase "Login / Create Profile" as UC1
-        usecase "View Course Catalog" as UC2
-        usecase "Register for Course" as UC3
-        usecase "Drop Course" as UC4
-        usecase "View Schedule & Billing" as UC5
-        usecase "Edit Personal Info" as UC6
-        usecase "Manage Courses (Add/Update)" as UC7
-        usecase "Manage Students & Rosters" as UC8
-    }
-
-    student --> UC1
-    student --> UC2
-    student --> UC3
-    student --> UC4
-    student --> UC5
-    student --> UC6
-
-    admin --> UC1
-    admin --> UC2
-    admin --> UC5
-    admin --> UC7
-    admin --> UC8
-```
 ### Flowchart of the main workflow
 ```mermaid
 graph TD
