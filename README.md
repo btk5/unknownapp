@@ -6,7 +6,7 @@ This is an unknown application written in Java
 
    
 ### Flowchart of the main workflow
-![alt text](Mermaid flowchart.png)
+![Project Screenshot](main/Mermaid flowchart.png)
 ### Prompts
 
 - "To help you complete Task 1, I need to see the core logic of the application."
