@@ -6,6 +6,7 @@ This is an unknown application written in Java
 
    
 ### Flowchart of the main workflow
+![Uploading Mermaid Chart - Create complex, visual diagrams with text.-2026-03-31-144248.png…]()
 
 ### Prompts
 
