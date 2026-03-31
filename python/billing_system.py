@@ -8,12 +8,10 @@ class BillingSystem:
     TUITION_PER_CREDIT = 300.0
 
     def __init__(self):
-        # Mocking the data structures found in the Java EnrollmentSystem
         self.students = {}
         self.courses = {}
 
     def add_sample_data(self):
-        # Adding a sample student and courses for demonstration
         self.students["S101"] = {"name": "Alice", "enrolled_courses": ["CS101", "MATH201"]}
         self.courses["CS101"] = {"title": "Intro to CS", "credits": 4}
         self.courses["MATH201"] = {"title": "Calculus II", "credits": 3}
