@@ -6,7 +6,34 @@ This is an unknown application written in Java
 
    
 ### Flowchart of the main workflow
-![Project Screenshot](Mermaid flowchart.png)
+```mermaid
+graph TD
+    Start[Start Program] --> Init[Init Data: Load JSON or Seed Defaults]
+    Init --> LoginMenu{Login Menu}
+    
+    LoginMenu -- "[1] Student Login" --> StudentID{ID Found or 'new'?}
+    StudentID -- "new" --> CreateProfile[Create Student Profile]
+    StudentID -- "ID exists" --> StudentMenu[Student Menu]
+    CreateProfile --> StudentMenu
+    
+    StudentMenu --> SOptions{Student Options}
+    SOptions -- "1-6: View/Reg/Drop/Bill/Edit" --> SAction[Perform Action]
+    SAction --> StudentMenu
+    SOptions -- "7: Logout" --> SaveS[Save Data]
+    SaveS --> LoginMenu
+    
+    LoginMenu -- "[2] Admin Login" --> AdminPass{Correct Password?}
+    AdminPass -- "Yes" --> AdminMenu[Admin Menu]
+    AdminPass -- "No" --> LoginMenu
+    
+    AdminMenu --> AOptions{Admin Options}
+    AOptions -- "1-9: Manage Courses/Students" --> AAction[Perform Action]
+    AAction --> AdminMenu
+    AOptions -- "10: Logout" --> SaveA[Save Data]
+    SaveA --> LoginMenu
+    
+    LoginMenu -- "[3] Exit" --> FinalSave[Final Save & Exit]
+```
 ### Prompts
 
 - "To help you complete Task 1, I need to see the core logic of the application."
