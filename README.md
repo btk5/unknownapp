@@ -3,7 +3,7 @@ This is an unknown application written in Java
 
 ---- For Submission (you must fill in the information below) ----
 ### Use Case Diagram
-![Description](filename.png)
+![Description](use-case-diagram.png)
 ### Flowchart of the main workflow
 ```mermaid
 graph TD
